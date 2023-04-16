@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "build": "node index.js"
+    "server": "nodemon index.js",
+    "client": "npm start --prefix ./client",
+    "dev": "concurrently \"npm run index\" \"npm run client\""
   },
   "keywords": [],
   "author": "",
